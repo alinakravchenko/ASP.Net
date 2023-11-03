@@ -1,0 +1,35 @@
+﻿@model Contact
+@{
+    ViewData["Title"] = "Контакты";
+}
+
+<div>
+    <h1>Отправьте нам сообщение. Мы его никогда не прочитаем</h1>
+    <form method="post" asp-controller="Contacts" asp-action="Check">
+        
+        <label asp-for="Name"></label>
+        <input asp-for="Name"></input>
+        <span asp-validation-for="Name"></span>
+
+        <label asp-for="SurName"></label>
+        <input asp-for="SurName"></input>
+        <span asp-validation-for="SurName"></span>
+
+        <label asp-for="Age"></label>
+        <input asp-for="Age"></input>
+        <span asp-validation-for="Age"></span>
+
+        <label asp-for="Email"></label>
+        <input asp-for="Email"></input>
+        <span asp-validation-for="Email"></span>
+
+        <label asp-for="Message"></label>
+        <input asp-for="Message"></input>
+        <span asp-validation-for="Message"></span>
+
+        <input type="submit" value="Отправить"></input>
+
+    </form>
+
+</div>
+

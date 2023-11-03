@@ -1,0 +1,20 @@
+﻿@model IEnumerable<Application.Models.Contact>
+
+<h2>Данные из списка заполнения формы</h2>
+<table>
+	<thead>
+		<tr><th>Name</th><th>Surname</th><th>Age</th><th>Email</th><th>Message</th></tr>
+	</thead>
+	<tbody>
+		@foreach (Application.Models.Contact r in Model)
+		{
+			<tr>
+				<td>@r.Name</td>
+				<td>@r.SurName</td>
+				<td>@r.Age</td>
+				<td>@r.Email</td>
+				<td>@r.Message</td>
+			</tr>
+		}
+	</tboby>
+</table>

@@ -1,0 +1,14 @@
+﻿@model Application.Models.Contact
+@{
+    ViewData["Title"] = "Thanks page";
+}
+
+<div>
+    <h1>Thank you, @Model?.Name!</h1>
+    <h3>Ваши данные: </h3>
+    <p> @Model?.SurName! </p>
+    <p> @Model?.Age! </p>
+    <p> @Model?.Email! </p>
+    <p> @Model?.Message! </p>
+</div>
+ Нажми <a asp-action="ListResponses">это</a> дабы увидеть все результаты

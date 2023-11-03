@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Application</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    
+</head>
+<body>
+    <header>
+        <center><span class="logo"> We learn ASP </span></center>
+        <center>
+            <a href="/"> Главная </a>
+            <a href="/contacts"> Обратная связь </a>
+            <a href="/catalog"> Каталог </a>
+        </center>
+    </header>
+    <main>
+        @RenderBody()
+    </main>
+    <footer>
+        <center>
+            <p>
+                Копирайты и прочие ненужности 
+            </p>
+        </center>
+    </footer>
+  
+</body>
+</html>
